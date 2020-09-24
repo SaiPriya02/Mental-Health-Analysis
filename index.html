@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Analysis</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet"> 
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="coloured-section" id="title">
+    <div class="container-fluid">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">Project</a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+            </ul>
+         </div>
+        </nav>
+        <!-- Title -->
+        <div>
+            <h1 class="title-text">Title Goes Here.</h1>
+        </div>
+        <!-- Input -->
+        <input class="form-control form-control-lg" type="url" placeholder="Enter Your Twitter Profile URL">
+        <p></p>
+        <button type="submit" class="input-button btn btn-outline-light btn-lg">Tell Me My Results!</button>
+    </div>
+    </section>
+
+    <section class="white-section" id="information">
+        <!-- cards -->
+    <h2 class="info-headings">Confused?</h2>
+    <p>This should help you understand better.</p>
+
+    <div class="row">
+      <div class="info-column col-lg-4 col-md-6">
+        <div class="card"> <!--1-->
+          <div class="card-body">
+            <h2 class="info-headings">What?</h2>
+            <p>This super simple tool tells you if you may have depression or not based on scanning the content you put out on social media, specifically Twitter.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="info-column col-lg-4 col-md-6">
+        <div class="card"> <!--2-->
+          <div class="card-body">
+            <h2 class="info-headings">Why?</h2>
+            <p>Mental Health is very important. Most communities across the world have a stigma towards mental health. This is our attempt to break the stigma. Many people who may have depression hesitate to directly show up at a therapist's office. Using a tool like this can give a push in the right direction, so to speak.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-column col-lg-4">
+        <div class="card"> <!--3-->
+          <div class="card-body">
+            <h2 class="info-headings">How?</h2>
+            <p>We extract the tweets posted by the user, and perform a sentiment analysis tailored towards sadness or depression. Apart from obvious sadness indicators, we also pick out phrases that may not be conventionally sad but give away the mental health of the user. This could include slang or vulgar language too.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <footer id="footer" class="coloured-section container-fluid">
+        <p class="footer-text">This is a project created by Sai Priya and Zeeshan Islam.</p>
+        <p>© Copyright 2020 Sentiment Analysis</p>
+    
+      </footer>
+</body>
+</html>
