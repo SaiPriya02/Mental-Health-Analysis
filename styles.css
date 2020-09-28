@@ -29,6 +29,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+h6{
+    line-height: 2rem;
+    color: #1F1F1F;
+}
+
 /* Navigation Bar */
 
 .navbar{
@@ -120,6 +125,11 @@ body{
     text-align: left;
     padding: 3% 15%;
 }
+@media (max-width:600px){
+    .resource-content{
+        text-align: center;
+    }
+}
 
 .res-links{
     /* font-family: 'Merriweather', serif; */
@@ -129,5 +139,19 @@ body{
 }
 .res-links:hover{
     color: #f5ab00;
+    text-decoration: none;
+}
+
+/* Log In and Sign Up */
+
+.details{
+    padding: 3% 30%;
+}
+
+.bottom-text{
+    color: #f5ab00;
+}
+.bottom-text:hover{
+    color: #FFCE5C;
     text-decoration: none;
 }
