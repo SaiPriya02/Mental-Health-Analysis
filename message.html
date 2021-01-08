@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <form action="POST">
+            <label for="q1">Question 1</label>
+            <input class='a' type="radio" id='q1' name='a' value='0'>
+        <label for="q2">Question 2</label>
+            <input class='a' type="radio" name='a' value='1'>
+        <label for="q3">Question 3</label>
+            <input class='a' type="radio" name='a' value='2'>
+        <label for="q4">Question 4</label>
+            <input class='a' type="radio" name='a' value='3'>
+
+        <label for="q1">Question 1a</label>
+            <input class='aa' type="radio" id='q1' name='2' value='0'>
+        <label for="q2">Question 2a</label>
+            <input class='aa' type="radio" name='2' value='1'>
+        <label for="q3">Question 3a</label>
+            <input class='aa' type="radio" name='2' value='2'>
+        <label for="q4">Question 4a</label>
+            <input class='aa' type="radio" name='2' value='3'>
+
+        <label for="q1">Question 1b</label>
+            <input class='aaa' type="radio" id='q1' name='3' value='0'>
+        <label for="q2">Question 2b</label>
+            <input class='aaa' type="radio" name='3' value='1'>
+        <label for="q3">Question 3b</label>
+            <input class='aaa' type="radio" name='3' value='2'>
+        <label for="q4">Question 4b</label>
+            <input class='aaa' type="radio" name='3' value='3'>
+
+        <label for="q1">Question 1c</label>
+            <input class='b' type="radio" id='q1' name='4' value='0'>
+        <label for="q2">Question 2c</label>
+            <input class='b' type="radio" name='4' value='1'>
+        <label for="q3">Question 3c</label>
+            <input class='b' type="radio" name='4' value='2'>
+        <label for="q4">Question 4c</label>
+            <input class='b' type="radio" name='4' value='3'>   
+
+        
+        </form>
+        
+        <script>
+            let numberOfQuestion=4;
+            valArr=new Array(numberOfQuestion);
+            //var temp=1;
+            const list = document.querySelectorAll('input[type=radio]:checked');
+            //console.log(list);
+            for (let l of list) {    
+               var temp=parseInt(l.value);
+               //console.log(temp);
+               valArr.push(temp);
+            }
+            // function for adding two numbers
+            const add = (a, b) => a + b// use reduce to sum our array
+            const sum = valArr.reduce(add)
+            //console.log(valArr);
+            //valArr=new Array(numberOfQuestion);
+            //for(var i=0;i<numberOfQuestion;i++){
+            //    valArr.push(input[i].value);
+            //    console.log(valArr);
+           // }
+            console.log(sum);
+        </script>
+    </body>
+</html>

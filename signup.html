@@ -23,52 +23,47 @@
 </head>
 <body>
   <!-- Navigation Bar -->
+  
   <section class="coloured-section" id="title">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="index.html">Oizys</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+          </ul>
+      </div>
+    </nav>
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">Oizys</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"> 
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="signup.html">Join Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Sign In</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About Us</a>
-            </li>
-            </ul>
-        </div>
-      </nav>
       <!-- Title -->
       <div>
-          <h1 class="title-text">Sign Up</h1>
-          <h3>Sign Up here to keep track of your previous results.</h3>
+          <h1 class="title-text">Tell us about yourself!</h1>
+          <h3>Enter your details here.</h3>
       </div>
     </div>
   </section>
 
   <section class="white-section details">
-      <div>
-        <input class="form-control form-control-lg" type="email" placeholder="Email ID"> <br>
-        <input class="form-control form-control-lg" type="password" placeholder="Password"> <br>
-        <input class="form-control form-control-lg" type="password" placeholder="Confirm Password"> <br>
-        <button type="submit" class="input-button btn btn-dark btn-lg">Sign Up</button>
-      </div>
+      <form action="insert.php" method="POST" >
+      <!-- <form> -->
+        <input class="form-control form-control-lg" type="text" name="fullName" placeholder="Full Name" required> <br>
+        <input class="form-control form-control-lg" type="number" name="Age" placeholder="Age" required> <br>
+        <input class="form-control form-control-lg" type="text" name="Sex" placeholder="Sex" required> <br>
+        <input class="form-control form-control-lg" type="email" name="emailID" placeholder="Email ID" required> <br>
+        <input class="form-control form-control-lg" type="tel" name="Phone" placeholder="Phone Number" > <br>
+        <input class="form-control form-control-lg" type="text" name="Country" placeholder="Country" required> <br>
+        <input class="form-control form-control-lg" type="text" name="Profession" placeholder="Profession" required> <br>
+
+        <a href="cesd.html"><button type="submit" class="input-button btn btn-dark btn-lg"name="submit">Next</button></a>
+      </form>
       <br>
-      <div>
-          <h6>Already Have an Account? <br> <a class="bottom-text" href="login.html">Sign In here.</a></h6>
-      </div>
   </section>
 
   <footer class="footer coloured-section ">

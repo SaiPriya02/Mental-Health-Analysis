@@ -9,6 +9,11 @@ font-family: 'Satisfy', cursive;
     margin:0;
 }
 
+.navcontainer{
+    padding: 1% 15%; /*top lr bottom*/
+    margin:0;
+}
+
 .coloured-section{
     background-color: #f5ab00;
     color:#ffffff;
@@ -37,7 +42,7 @@ h6{
 /* Navigation Bar */
 
 .navbar{
-    padding: 0 0 4.5rem;
+    padding: 0.75% 15%;
 }
 
 .navbar-brand{
@@ -92,7 +97,7 @@ h6{
 /* Footer */
 
 .footer{
-    padding:4% 15%;
+    padding:3% 15%;
 }
 
 /* About Us */
@@ -160,4 +165,25 @@ h6{
 .bottom-text:hover{
     color: #FFCE5C;
     text-decoration: none;
+}
+
+/* CESD Page */
+
+input[type='radio']{
+    transform: scale(2); /*make the button twice as big*/
+}
+
+.cesd-title{
+    margin: 0 15% 5% 15%; /*urdl*/
+}
+.cesd-statements{
+    padding: 20px 10% 20px 0;
+    text-align:left;
+}
+
+/* Results Page */
+
+.results-buttons{
+/* add margins */
+margin: 30px;
 }
