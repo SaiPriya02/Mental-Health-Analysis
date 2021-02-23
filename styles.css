@@ -99,6 +99,12 @@ h6{
 .footer{
     padding:3% 15%;
 }
+/* .footer-link{
+    color: #ffffff;
+}
+.footer-link:hover{
+    color: #FFCE5C;
+} */
 
 /* About Us */
 
@@ -185,4 +191,9 @@ input[type='radio']{
 
 .results-buttons{
 margin: 30px;
+}
+
+/* Admin Page */
+.admin-btn{
+    margin: 10%;    
 }

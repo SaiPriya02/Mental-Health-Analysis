@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Admin | Add Question</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@300;500;600;700;800&family=Satisfy&display=swap" rel="stylesheet"> 
@@ -19,10 +19,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
 </head>
 <body>
-  <!-- Navigation Bar -->
+
+    <!-- Navigation Bar -->
   
   <section class="coloured-section" id="title">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -44,34 +44,23 @@
           </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-      <!-- Title -->
-      <div>
-          <h1 class="title-text">Tell us about yourself!</h1>
-          <h3>Enter your details here.</h3>
-      </div>
-    </div>
   </section>
 
-  <section class="white-section details">
-      <form action="insert.php" method="POST" >
-      <!-- <form> -->
-        <input class="form-control form-control-lg" type="text" name="fullName" placeholder="Full Name" required> <br>
-        <input class="form-control form-control-lg" type="number" name="Age" placeholder="Age" required> <br>
-        <input class="form-control form-control-lg" type="text" name="Sex" placeholder="Sex" required> <br>
-        <input class="form-control form-control-lg" type="email" name="emailID" placeholder="Email ID" required> <br>
-        <input class="form-control form-control-lg" type="tel" name="Phone" placeholder="Phone Number" > <br>
-        <input class="form-control form-control-lg" type="text" name="Country" placeholder="Country" required> <br>
-        <input class="form-control form-control-lg" type="text" name="Profession" placeholder="Profession" required> <br>
-        
-        <a href="cesd.php"><button type="submit" class="input-button btn btn-dark btn-lg" name="submit">Next</button></a>
-      </form>
-      <br>
-  </section>
-
-  <footer class="footer coloured-section ">
-    <p class="footer-text">This is a project created by Sai Priya and Zeeshan Islam.</p>
-    <p>© Copyright 2020 Oizys</p>
-  </footer>
+    <section class="white-section">
+        <div class="container-fluid">
+            <h1>Add a New Question to the Database</h1> <br>
+            <form action="insertdb.php" method="post">
+              <input class="form-control form-control-lg" type="text" name="question" id="question" placeholder="Enter Question Here">
+              <br>
+              <h3>Enter Points for the Following Options</h3>
+              <br>
+              <input class="form-control form-control-lg" type="number" name="pts_1" placeholder="Rarely/none of the time (less than 1 day)"> <br>
+              <input class="form-control form-control-lg" type="number" name="pts_2" placeholder="Some or a little of the time (1-2 days"> <br>
+              <input class="form-control form-control-lg" type="number" name="pts_3" placeholder="Occasionally or a moderate amount of time (3-4 days)"> <br>
+              <input class="form-control form-control-lg" type="number" name="pts_4" placeholder="Most or all of the time (5-7 days)"> <br>
+              <input class="input-button btn btn-dark btn-lg" type="submit" value="Add Question">
+            </form>
+        </div>
+    </section>
 </body>
 </html>
